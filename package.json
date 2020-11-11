@@ -1,0 +1,25 @@
+{
+  "name": "do-not-touch",
+  "version": "1.0.0",
+  "description": "Remake of donottouch.org by Studio Moniker (https://studiomoniker.com/projects/do-not-touch)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iosonosempreio/do-not-touch.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/iosonosempreio/do-not-touch/issues"
+  },
+  "homepage": "https://github.com/iosonosempreio/do-not-touch#readme",
+  "dependencies": {
+    "d3": "^6.2.0",
+    "express": "^4.17.1",
+    "socket.io": "^3.0.1"
+  }
+}
