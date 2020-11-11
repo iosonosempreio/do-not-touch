@@ -7,17 +7,42 @@ main {
 }
 
 .story {
-    background-color: #ddd;
+    background-color: #fff;
+    border: 1px dashed black;
     width: 320px;
-    height: 480px;
+    height: 320px;
     position: relative;
+    cursor: none;
 }
 
-.story > div {
+.story[data-frame="frame-1"] {
+    background-image: url(assets/download.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.point {
     display: flex;
-    background-color: black;
+    background-color: #0000ff;
+    mix-blend-mode: difference;
     width: 10px;
     height: 10px;
     position: absolute;
     transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.point.self {
+    background-color: #00ff00;
+}
+
+.point.self:after {
+    border: 1px dotted #00ff00;
+    width: 500%;
+    height: 500%;
+    content: ' ';
+    display: flex;
+    position: absolute;
+    transform: translate(calc(-50% + 5px), calc(-50% + 5px));
+    border-radius: 50%;
 }
